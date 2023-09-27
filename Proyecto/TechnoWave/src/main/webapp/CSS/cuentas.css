@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #424242 !important;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* aca empiezo yo */
+
+body{
+    overflow: hidden;
+}
+
+.contedor_principal{
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/941/428/991/synthwave-retro-electronic-music-neon-wallpaper-preview.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 3% 0% 15% 0%;
+    /*padding: 7% 0% 15% 0%;*/
+    /*background-attachment: fixed; esto le da el parallax */
+}
+.contenedor_registros{
+    background-color: #424242;
+    /* margin-left: 35%;
+    margin-right: 35%; */
+    padding: 20px 50px 20px 50px;
+    display: block;
+    justify-content: space-between;
+    justify-content: center;
+    height: 70vh;
+    width: 50vh;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 5;
+}
+.contenedor_registros p{
+    color: #C6C4C4;
+    font-size: 15px;
+    text-align: center;          
+}
+.contenedor_registros h1{
+color: #0EAC8C;
+text-align: center;
+font-weight: bolder;
+font-size: 25px;
+padding-top: 5%;
+margin-bottom: 40px;
+top: 0;
+}
+.contenedor_registros button{
+    position: absolute;
+    margin-top: 5%;
+    padding: 10px;
+    background-color:#0FAC8C;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    display: block;
+    font-weight: bold;  
+    font-size: 20px;
+    right: 50px;
+    bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contenedor_registros button:hover{
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+.nombre{
+margin: 5%;
+}
+.Inicio_sesion_cuenta p{
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+.Inicio_sesion_cuenta_contraseña p{
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+.contenedor_registros p a{
+text-decoration: none;
+font-size: 13px;
+color: #a89ea1;
+}
+.contenedor_registros p a:hover{
+    text-decoration: underline;
+}
+/* este es el de  inicio */
+
+.gmail2 p{
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+input{
+    border-radius: 5px;
+    background-color: #424242;
+    border: 1px solid #737373;
+    width: 100%;
+    text-align: left;
+    color: white;
+    height: 25px;
+    font-size: 15px;
+    font-weight: lighter !important;
+}
+.gmail2v2 p{
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+/* fin del de inicio */
+.nombre{
+    margin: 5%;
+    }
+    .nombre p{
+        color: white;
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+        
+    }
+    .apellido{
+        margin: 5%;
+        }
+    .apellido p{
+        color: white;
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .gmail{
+        margin: 5%;
+        }
+    .gmail p{
+        color: white;
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .contraseña{
+        margin: 5%;
+        }
+    .contraseña p{
+        color: white;
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    

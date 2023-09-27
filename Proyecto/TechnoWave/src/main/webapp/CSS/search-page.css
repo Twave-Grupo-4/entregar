@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+    --azul_oscuro: #101F37;
+
+}
+.contenedor-principal{
+    color: white;
+    background-color:#424242;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contenedor_filtros{
+    background-color: #101F37;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    width: 500px;
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 10;
+    left: 0;
+    margin-top: 45px;
+    font-size: 20px;
+}
+.especial1{
+    text-decoration: none;
+    font-style: italic;
+    color: #0EAC8C;
+    font-size: 35px;
+    font-weight: bold;
+}
+.especial2{
+    text-decoration: none;
+    font-style: italic;
+    color: #C6C4C4;
+    font-size: 15px;
+    font-weight: bold;
+}
+.especial3{
+    text-decoration: none;
+    font-style: italic;
+    color: #C6C4C4;
+    font-size: 25px;
+    font-weight: bold;
+}
+.categorias {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .contenedor_precios{
+      color: white;
+  }
+  /* Hide the browser's default checkbox */
+  .categorias input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; 
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .categorias:hover input ~ .checkmark {
+    background-color: #016450;
+    transition: 0.5s;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .categorias input:checked ~ .checkmark {
+    background-color: #0EAC8C;
+    }
+  
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  
+    /* Show the checkmark when checked */
+    .categorias input:checked ~ .checkmark:after {
+      display: block;
+    }
+  
+    /* Style the checkmark/indicator */
+    .categorias .checkmark:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      transition: 0.5s;
+    }
+.busqueda-activo{
+    border-bottom: solid;
+    border-color: #7D828B;  
+    padding: 10px;
+}
+.marca-disponibles{
+    border-bottom: solid;
+    border-color: #7D828B;
+}
+.contenedor_articulos{
+    height: 100%;
+    width: 100%;
+    padding:10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items:normal;
+    margin:45px;
+    top: 0;
+    left:0; 
+}
+.articulo a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.articulo{
+    display:block;
+    background-color: #5d5d5d;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.articulo a img{
+    height:150px;
+    width:250px;
+    padding: 10px;
+    top:0;
+    left:0;
+}
+.articulo a p{
+    padding: 10px;
+    margin: 0;
+}
+.articulo h2{
+    color: #0EAC8C;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.articulo .botones{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.articulo .gestionar{
+    background-color: #0EAC8C;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 20px;
+    padding: 7px;
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+.articulo .eliminar{
+    
+    background-color: #ce0202;
+    color: #fff;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+.articulo .eliminar:hover, .articulo .gestionar:hover{
+    opacity: 60%;
+    transition: all 0.5s ease;
+}
+
+.añadir-producto{
+    position: absolute;
+    left: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #0EAC8C;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 15px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.añadir-producto:hover{
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+/* fin de footer */  
+.contenedor_precios{
+    font-weight: bold;
+    padding: 10px;
+    display: inline;
+    justify-content: space-evenly;
+}
+.precios_minimos{
+    display: block;
+}
+.precios_minimos input{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align:20;
+}
+.precios_maximos{
+    display: block;
+}
+.precios_maximos input{
+    border-radius: 10px;
+}
+.busqueda-activo button{
+    border: none;
+    background-color: #101F37   ;
+    color: #C6C4C4;
+}

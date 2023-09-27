@@ -1,0 +1,244 @@
+/*contenido*/
+
+.main-container1{
+    background-color: #5d5d5d;
+    margin: 5% 10% 3% 10%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 20px;
+    color: #FFF;
+}
+
+/*imagenes del producto*/
+
+.main-container1 .contenedor-imagenes{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
+}
+
+.text_info{
+    margin-bottom: 20px;
+}
+
+/*sistema de estrellas*/
+.main-container1 .text_info .star-widget input {
+    display: none;
+}
+
+  .star-widget label {
+    font-size: 50px;
+    color: #444;
+    padding: 10px;
+    transition: all 0.2s ease;
+  }
+
+  input:not(:checked) ~label:hover,
+  input:not(:checked) ~label:hover ~label{
+    color: #0EAC8C;
+  }
+
+  input:checked~label {
+    color: #0EAC8C;
+  }
+
+  input:checked form {
+    display: block;
+  }
+
+  .star-widget{
+    transform: rotateY(180deg);
+    text-align: center;
+  }
+/*fin de sistema de estrellas*/
+
+.text_info{
+    margin-top: 30px;
+    position: relative;
+}
+
+.text_info .precio{
+    font-size: 60px;
+    color: #0EAC8C;
+    text-align: center;
+}
+
+.text_info h2{
+    margin-bottom: 25px; 
+    text-align: center;
+    font-size: 20px;
+}
+
+.text_info #añadir, .text_info #quitar{
+    position: absolute; 
+    text-align: center !important;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    opacity: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+}
+
+#añadir:hover{
+    opacity: 60%;
+    transition: 0.5s;
+} 
+
+#añadir{
+    background-color: #0EAC8C;
+    visibility: visible;
+    opacity: 1;
+}
+
+#quitar{
+    background-color: #444;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#btn-añadir-carro{
+    display: none;
+}
+
+#btn-añadir-carro:checked ~ #quitar{
+    opacity: 1;
+    visibility: visible;
+}
+
+#btn-añadir-carro:checked ~ #añadir{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*texto cuotas y tarjetas*/
+.cuotas{
+    font-weight: bold;
+    margin-top: 130px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tarjetas{
+    width: 100px;
+    height: 50px;
+    margin: 10px 20px;
+}
+
+/*Caracteristicas*/
+.caracteristicas{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: gray solid;
+    padding-bottom: 30px;
+}
+
+.subtitulo{
+    font-size: 35px;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    color: #0EAC8C;
+    margin: 30px 0px 40px 30px;
+}
+
+.col1 li{
+    color: white;
+    font-size: 25px;
+    margin-left: 30px;
+    grid-column: 1/2;
+}
+
+/* Carrusel 1*/
+
+.slide-container{
+    max-width: 1320px;
+    width: 100%;
+    padding: 40px;
+    margin: 30px 0px;
+}
+.slide-content{
+    margin: 0 40px;
+}
+.card{
+    width: 310px !important;
+    border-radius: 7px !important;
+    background-color: #5d5d5d !important;
+}
+.image-contet, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 290px;
+    padding: 3px;
+    margin: auto;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0px;
+}
+.description{
+    font-size: 50px;
+    color: #0EAC8C;
+    text-align: center;
+    font-weight: bold;
+}
+.button{
+    border: none;
+    font-size: 20px;
+    color: #FFF;
+    padding: 10px 15px;
+    background-color: #0EAC8C;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.5s ease; 
+    font-weight: bold;
+}
+.button:hover{
+    opacity: 60%;
+    transition: all 0.5s ease;
+}
+.swiper-button-next, .swiper-button-prev{
+    background-color: #0f7d67;
+    padding: 30px;
+    border-radius: 10px; 
+    color: #000 !important;
+    font-weight: bold !important;
+    transition: 0.3s;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    background-color: #0EAC8C;
+    color: white !important;
+    transition: 0.3s;
+}

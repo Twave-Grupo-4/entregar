@@ -1,0 +1,217 @@
+.contenedor_medio{
+    background-color: #424242;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height:max-content;
+    }
+
+.contenedor_1{
+    background-color:#424242;
+    color: #0EAC8C;
+    height: 100%;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+.contenedor_2{
+    background-color: #7a7575;
+    height: 100%;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.carousel-item img{
+    height: 352px;
+    width:  572px;
+}
+.Separador{
+ background-color: #2C2C32;   
+ height: 75px;
+ width: 100%;
+}
+.Contenedor_Inferno{
+    background-color: #424242 ;
+}
+/* Inicio del carousel infernal */
+.Contenedor_Inferno .nom_listado{
+    font-style: italic;
+    color: hsl(0, 2%, 77%);
+    font-size: 50px;
+    padding: 10px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.Especial1{
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: normal;
+    color: red;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(163, 30, 7),
+    0 0 82px rgb(163, 30, 7),
+    0 0 92px rgb(163, 30, 7),
+    0 0 102px rgb(116, 47, 35),
+    0 0 151px rgb(163, 30, 7);
+}
+.Contenedor_Inferno .Especial2{
+    text-decoration: none;
+    color: #0EAC8C;
+    font-size: 20px;
+}
+/* inicio del slider del medi en si  */
+.slider-wrap{
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+            }
+.slider-main{
+    position: absolute; 
+    width: 152%; 
+}           
+.item{
+    width: 300px;
+    display: inline-block;
+    background-color:#101F37;
+    position: relative;
+    height: 100%;
+    margin: 4px;
+} 
+.carousel_texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    color: #0EAC8C;
+    font-weight: bold;
+    background-color: red;
+}
+.btn-area{
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+}
+.slider-btn{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    background: white;
+    color: #101F37;
+}
+.slider-btn:hover{
+    background:#101F37;
+    color: white;
+}
+
+/* span */
+
+.sin-interes{
+    color: red;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(163, 30, 7),
+    0 0 82px rgb(163, 30, 7),
+    0 0 92px rgb(163, 30, 7),
+    0 0 102px rgb(116, 47, 35),
+    0 0 151px rgb(163, 30, 7);
+}
+
+/* Carruseles de los productos */
+.slide-container{
+    max-width: 95%;
+    width: 100%;
+    padding: 40px;
+    margin: 30px 0px;
+}
+.slide-content{
+    margin: 0 40px;
+}
+.card{
+    width: 310px !important;
+    border-radius: 7px !important;
+    background-color: #5d5d5d !important;
+}
+.image-contet, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 290px;
+    padding: 3px;
+    margin: auto;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0px;
+}
+.description{
+    font-size: 50px;
+    color: #0EAC8C;
+    text-align: center;
+    font-weight: bold;
+}
+.button{
+    border: none;
+    font-size: 20px;
+    color: #FFF;
+    padding: 10px 15px;
+    background-color: #0EAC8C;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.5s ease; 
+    font-weight: bold;
+}
+.button:hover{
+    opacity: 60%;
+    transition: all 0.5s ease;
+}
+.swiper-button-next, .swiper-button-prev{
+    background-color: #0f7d67;
+    padding: 30px;
+    border-radius: 10px; 
+    color: #000 !important;
+    font-weight: bold !important;
+    transition: 0.3s;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    background-color: #0EAC8C;
+    color: white !important;
+    transition: 0.3s;
+}

@@ -1,0 +1,15 @@
+.main-container{
+    background-color: #5d5d5d;
+    color: #fff;
+    margin: 50px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1{
+    color: #0EAC8C !important;
+    font-weight: bold !important;
+    font-style: italic !important;
+    margin: 50px !important;
+}

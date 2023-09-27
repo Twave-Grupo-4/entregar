@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #424242 !important;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    zoom: 80%;
+}
+html{
+    margin: 0 auto;
+    padding: 0;
+}
+.Menu_principal{
+    background-color: #101F37;
+    padding: 10px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.Menu_principal_cajas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Menu_principal_cajas .logo img{
+    height: 100px; 
+    width: 200px;
+    margin-top: 10px;
+}
+ 
+/* Inicio de la barra de busqueda */
+.Caja_contenedora{    
+max-width: 500px;
+width: 100%;
+margin-right: 200px;
+}
+.Caja_contenedora .Caja_busqueda{
+    position: relative;
+    height: 45px;
+    max-width: 480px;
+    margin: auto;
+}
+.Caja_busqueda input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:white;
+    border-radius: 25px;
+    outline: none;
+    border: red;
+    padding-left: 20px;
+    font-size: 18px;
+}
+.Caja_busqueda .icon{
+    position: absolute;
+    text-align: center;
+    right: -2px;
+    top: 0;
+    width: 50px;
+    background:#0EAC8C;
+    color: white;
+    height: 100%;
+    font-size: 20px;
+    border-radius:0 25px 25px 0;
+    line-height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-usuario{
+    margin-right: 120px;
+}
+.btn-usuario i, .btn-carrito i{
+    font-size: 50px;
+}
+
+/* Inicio del codigo del nav de foindoi */
+.Articulos{
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-image: url("https://t4.ftcdn.net/jpg/03/77/78/29/360_F_377782976_sZHn1LkO7kPriRLVpb8jQbGlq0Nk3r1l.webp   ");
+    /*filter: blur(1px);
+    -webkit-filter: blur(1px);*/
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   /* background-attachment: fixed; */
+}
+.Articulos_aux{
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.texto{
+    font-size: 15px;
+}
+.Articulos_aux a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*footer*/
+.pie_pagina{
+    background-color: #2C2C32;
+    padding: 30px 100px;
+}
+.pie_pagina .iconos{
+    margin-right: 200px;
+    margin-left: 200px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+}
+.iconos a{
+    color:#0EAC8C;
+    text-decoration: none;
+    opacity: 1;
+    transition: 0.5s;
+}
+.iconos a:hover{
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+.iconos i{
+    margin: 0px 100px;
+}
+.info_pie{
+    margin-top: 50px;
+    font-size: 17px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}
+
+.info_pie a{
+    color: white;
+    text-decoration: none;
+}
+
+.info_pie a:hover{
+    text-decoration: underline;
+}
